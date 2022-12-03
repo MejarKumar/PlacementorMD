@@ -110,7 +110,7 @@ const Data = () => {
   useEffect(() => {
 
     axios
-      .get(`/api/${params.type}/${params.id}`)
+      .get(`https://placementro-iit-dhanbad-backend.onrender.com/api/${params.type}/${params.id}`)
       .then((response) => {
         // console.log(response.data.interview_round.round1);
         setData(response.data);
