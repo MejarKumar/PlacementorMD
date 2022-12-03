@@ -43,7 +43,7 @@ export default function CompanyFetch(props) {
   //filter companies according to year
   useEffect(() => {
     axios
-      .get(`https://placementor-iit-dhanbad-backend.onrender.com//api/${props.url}/all_companies`)
+      .get(`https://placementro-iit-dhanbad-backend.onrender.com//api/${props.url}/all_companies`)
       .then((response) => {
         
         let yearFilter = parseInt(props.year);
