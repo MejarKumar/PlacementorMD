@@ -43,7 +43,7 @@ export default function CompanyFetch(props) {
   //filter companies according to year
   useEffect(() => {
     axios
-      .get(`https://placementro-iit-dhanbad-backend.onrender.com/api/${props.url}/all_companies`)
+      .get(`https://placementro-iit-dhanbad-backend.onrender.com/api/${props.url}/all_companies`) //the link here is from the backend work done on render thi repo was supposed to be for render only
       .then((response) => {
         
         let yearFilter = parseInt(props.year);
